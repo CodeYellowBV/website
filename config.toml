@@ -79,6 +79,13 @@ googleAnalytics = ""
 			title = "Logistics"
 			description = "Logistics software, designed for ease of use and focused on supporting the logistical planning process."
 
+	# Technology section
+	[params.technology]
+		headline    = "Read more about our work on the CY Tech Blog"
+		description = "If you want to know more about the details of our work and technology we use, please visit our Tech Blog for more in-depth content. Code Yellow actively supports the Open Source community and promotes the Open Source philosophy by making our own work available as Open Source libraries. You can find our Open Source projects at both Github (most recent stuff) and Bitbucket (more legacy stuff)."
+		# description = "We Create Software"
+		buttonText  = "Visit tech.codeyellow.nl"
+
 
 	#[params.technology]
 	#	headline = "At Code Yellow we share our technology with other developers"

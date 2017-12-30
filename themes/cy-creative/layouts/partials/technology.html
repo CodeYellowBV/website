@@ -1,28 +1,22 @@
-{{ "<!-- SERVICES -->" | safeHTML }}
-<section id="technology">
-    {{ with .Site.Params.technology.headline }}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{ . }}</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-    {{ end }}
+{{ "<!-- TECHNOLOGY -->" | safeHTML }}
+<section class="bg-dark" id="technology">
     <div class="container">
         <div class="row">
-            {{ range .Site.Params.technology.list }}
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x {{ .icon }} wow bounceIn text-primary"></i>
-                    <h3>{{ .title }}</h3>
-                    {{ with .description }}
-                        <p class="text-muted">{{ . }}</p>
-                    {{ end }}
-                </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <i class="fa fa-code fa-5x wow bounceIn" data-wow-delay=".1s"></i><br><br>
+                {{ with .Site.Params.technology.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.technology.headline .Site.Params.technology.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.technology.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .Site.Params.technology.buttonText }}
+                    <a href="https://tech.codeyellow.nl/" class="btn btn-default btn-xl wow">{{ . }}</a>
+                {{ end }}
             </div>
-            {{ end }}
         </div>
     </div>
 </section>
