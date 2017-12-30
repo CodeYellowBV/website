@@ -16,10 +16,12 @@
         </div>-->
 
         <div class="header-content-inner">
+            <img src="codeyellow_new_wit_c.png" alt="">
 
             {{ with .Site.Params.hero.slogan }}
                 <h1>{{ . | markdownify  }}</h1>
             {{ end }}
+                <hr>
             {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
                 <hr>
             {{ end }}

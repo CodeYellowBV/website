@@ -42,7 +42,7 @@ googleAnalytics = ""
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Code Yellow"
+		#slogan     = "Code Yellow"
 		subtitle   = "Software Development"
 		buttonText = "Find out more"
 
