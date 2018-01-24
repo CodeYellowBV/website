@@ -21,7 +21,7 @@ prepare: FORCE
 build: FORCE
 	mv site/ src/
 	cd src/ && hugo
-	mv site/public/ site/
+	mv src/public/ site/
 
 
 
