@@ -49,10 +49,11 @@ googleAnalytics = ""
 
 	# About section
 	[params.about]
-		headline    = "We Create Software"
-		description = "Code Yellow is a business focused on the long term. We strongly believe in giving creative freedom to a group of brilliant people to create innovative concepts and grow them into viable products."
+		headline    = "**OUR MISSION** is to help organizations **GROW**."
+		description = "Bespoke software by Code Yellow transforms how organizations plan, control and streamline their processes for scaling up their operations."
+		#description = "Code Yellow is a business focused on the long term. We strongly believe in giving creative freedom to a group of brilliant people to create innovative concepts and grow them into viable products."
 		# description = "We Create Software"
-		# buttonText  = "We Create Software"
+		buttonText  = "Contact Us"
 
 
 	# Service section

@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue',Arial,sans-serif;
     background-color: #fff;
 }
 
@@ -67,7 +67,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #2d303b;
 }
 
 .text-faded {
@@ -163,7 +163,7 @@ aside {
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
+        /*font-size: 14px;*/
         color: #ebbb12;
     }
 
@@ -189,7 +189,15 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    /*background-image: url(../img/header.jpg);
+    background-image: url(../img/header.jpg);
+    background-blend-mode: overlay;
+    background-color: #2d303b;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /*background-image: url(../img/cy-backbw2.jpg);*/
     /*background-image: url(../img/cy-background-720p.webm);*/
     /*background-position: center;
     -webkit-background-size: cover;
@@ -455,7 +463,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #f2f2f2;
     color: #fff;
-    background-color: #000;
+    background-color: #2d303b;
 }
 
 .btn-primary:active,

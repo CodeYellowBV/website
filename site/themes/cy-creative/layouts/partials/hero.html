@@ -1,12 +1,10 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header>
-    <div class="fullscreen-bg">
-        <video loop muted autoplay poster="../img/header.jpg" class="fullscreen-bg__video">
-            <source src="/img/cy-background-720p.webm" type="video/webm">
-            <!--<source src="video/big_buck_bunny.mp4" type="video/mp4">
-            <source src="video/big_buck_bunny.ogv" type="video/ogg">-->
+    <!--<div class="fullscreen-bg">
+        <video loop muted autoplay poster="../img/cy-backbw2.jpg" class="fullscreen-bg__video">
+            <source src="../img/cy-background-720p.webm" type="video/webm">
         </video>
-    </div>
+    </div>-->
 
     <div class="header-content">
         
@@ -16,17 +14,22 @@
         </div>-->
 
         <div class="header-content-inner">
-            <img src="codeyellow_new_wit_c.png" alt="">
+            <object data="../img/logo-w.svg" type="image/svg+xml">
+                <img src="codeyellow_new_wit_c.png" />
+            </object>
+
 
             {{ with .Site.Params.hero.slogan }}
                 <h1>{{ . | markdownify  }}</h1>
             {{ end }}
-                <hr>
+                <!--<hr>-->
             {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
                 <hr>
             {{ end }}
             {{ with .Site.Params.hero.subtitle }}
-                <p>{{ . | markdownify }}</p>
+                <br><br>
+                <h2 class="section-heading">{{ . | markdownify }}</h2>
+                <hr>
             {{ end }}
             {{ with .Site.Params.hero.buttonText }}
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ . }}</a>
