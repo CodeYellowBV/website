@@ -14,7 +14,7 @@
         </div>-->
 
         <div class="header-content-inner">
-            <object data="../img/logo-w.svg" type="image/svg+xml">
+            <object data="../img/logo_diamond_shape_emphasis1.svg" type="image/svg+xml">
                 <img src="codeyellow_new_wit_c.png" />
             </object>
 
@@ -23,11 +23,11 @@
                 <h1>{{ . | markdownify  }}</h1>
             {{ end }}
                 <!--<hr>-->
-            {{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
+            <!--{{ if and .Site.Params.hero.slogan .Site.Params.hero.subtitle }}
                 <hr>
-            {{ end }}
+            {{ end }}-->
             {{ with .Site.Params.hero.subtitle }}
-                <br><br>
+                <br>
                 <h2 class="section-heading">{{ . | markdownify }}</h2>
                 <hr>
             {{ end }}
