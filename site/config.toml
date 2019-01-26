@@ -24,7 +24,7 @@ googleAnalytics = ""
 	description = "Creating software to empower your business. Made in Eindhoven."
 
 	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+	favicon = "favicon.png"
 
 
 	# Navigation
